@@ -4,28 +4,34 @@
 @inject UserManager<ApplicationUser> UserManager
 
 <header>
-    <ul class="nav justify-content-center" style="background-color: #e3f2fd;">
-    <li class="nav-item">
-        <a class="nav-link text-dark" asp-controller="Home" asp-action="Index" title="">Home</a>
-    </li>
-    @if (SignInManager.IsSignedIn(User))
+      <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
+      <div class="container-fluid py-1 px-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
+            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Dashboard</li>
+          </ol>
+          <h6 class="font-weight-bolder mb-0">Dashboard</h6>
+        </nav>
+        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+          <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+            <div class="input-group input-group-outline">
+              <label class="form-label">Type here...</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <ul class="navbar-nav  justify-content-end">
+            <li class="nav-item d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
+                <i class="fa fa-user me-sm-1"></i>
+@if (SignInManager.IsSignedIn(User))
     {
         var claims = User.Claims.ToList();
-        foreach (var claim in claims)
-        {
-            if (claim.Type == "Moderator")
-            {
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-controller="Moderator" asp-action="Index" title="">Moderator</a>
-                </li>
-                break;
-            }
-        }
         <li class="nav-item">
             <a class="nav-link text-dark" href="/Home/User/@UserManager.GetUserId(User)">@User.Identity.Name</a>
          </li>
          <li class="nav-item">
-            <form class="nav-menu form-inline" asp-controller="Account" asp-action="Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <form class="nav-link text-dark" asp-controller="Account" asp-action="Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
                 <button id="button" type="submit" class="nav-link btn btn-link text-dark">Logout</button>
             </form>
         </li>
@@ -36,6 +42,9 @@
         <li class="nav-item">
             <a asp-action="Register" asp-controller="Account" class="nav-link text-dark" title="">Sign Up</a>
         </li>
-    }
-    </ul>
+    }                       
+          </ul>
+        </div>
+      </div>
+    </nav>
 </header>
