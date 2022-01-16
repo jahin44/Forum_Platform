@@ -54,3 +54,36 @@ System.InvalidOperationException: The following sections have been defined but h
 2022-01-16 03:29:15.347 +06:00 [INF] User logged out.
 2022-01-16 03:30:42.232 +06:00 [INF] Application Starting up
 2022-01-16 03:31:10.133 +06:00 [INF] User logged out.
+2022-01-16 04:07:50.275 +06:00 [INF] Application Starting up
+2022-01-16 04:14:14.806 +06:00 [INF] Application Starting up
+2022-01-16 14:37:01.820 +06:00 [INF] Application Starting up
+2022-01-16 14:40:16.928 +06:00 [INF] Application Starting up
+2022-01-16 14:42:32.934 +06:00 [FTL] Application start-up failed
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\GitHub\Forum_Platform\Forum\Forum.Web\Program.cs:line 134
+2022-01-16 14:43:38.817 +06:00 [FTL] Application start-up failed
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\GitHub\Forum_Platform\Forum\Forum.Web\Program.cs:line 134
+2022-01-16 14:44:29.955 +06:00 [FTL] Application start-up failed
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\GitHub\Forum_Platform\Forum\Forum.Web\Program.cs:line 134
+2022-01-16 14:46:40.290 +06:00 [INF] Application Starting up
+2022-01-16 14:47:04.620 +06:00 [INF] User logged out.
+2022-01-16 14:47:18.754 +06:00 [WRN] User validation failed: DuplicateUserName;DuplicateEmail.
+2022-01-16 14:47:18.877 +06:00 [WRN] User validation failed: DuplicateUserName;DuplicateEmail.
+2022-01-16 14:47:18.893 +06:00 [WRN] User validation failed: DuplicateUserName;DuplicateEmail.
+2022-01-16 14:48:03.875 +06:00 [WRN] User validation failed: DuplicateUserName;DuplicateEmail.
+2022-01-16 14:48:03.886 +06:00 [WRN] User validation failed: DuplicateUserName;DuplicateEmail.
+2022-01-16 14:48:03.893 +06:00 [WRN] User validation failed: DuplicateUserName;DuplicateEmail.

@@ -22,6 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Forum.DataLayer\Forum.DataLayer.csproj" />
     <ProjectReference Include="..\Forum.Membership\Forum.Membership.csproj" />
+    <ProjectReference Include="..\Forum.System\Forum.System.csproj" />
   </ItemGroup>
 
   <ItemGroup>

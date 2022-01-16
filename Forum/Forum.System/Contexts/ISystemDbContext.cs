@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Forum.Membership.Contexts
+namespace Forum.System.Contexts
 {
-    public interface IMembershipDbContext
+    public interface ISystemDbContext
     {
     }
 }

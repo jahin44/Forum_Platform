@@ -1,4 +1,5 @@
 ﻿using Forum.Membership.Entities;
+using Forum.System.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -6,14 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Forum.Membership.Contexts
+namespace Forum.System.Contexts
 {
-    public class MembershipDbContext : DbContext, IMembershipDbContext
+    public class SystemDbContext : DbContext, ISystemDbContext
     {
         private readonly string _connectionString;
         private readonly string _migrationAssemblyName;
 
-        public MembershipDbContext(string connectionString, string migrationAssemblyName)
+        public SystemDbContext(string connectionString, string migrationAssemblyName)
         {
             _connectionString = connectionString;
             _migrationAssemblyName = migrationAssemblyName;
@@ -30,11 +31,18 @@ namespace Forum.Membership.Contexts
             base.OnConfiguring(dbContextOptionsBuilder);
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<ApplicationUser>()
+        //        .ToTable("AspNetUsers", t => t.ExcludeFromMigrations())
+        //        .HasMany<Comment>()
+        //        .WithOne(g => g.ApplicationUser);
 
+        //    base.OnModelCreating(modelBuilder);
+        //}
 
-            base.OnModelCreating(modelBuilder);
-        }
+        public DbSet<Board> Boards { get; set; }
+        public DbSet<Topic> Topics { get; set; }
+
     }
 }

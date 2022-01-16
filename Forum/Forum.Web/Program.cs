@@ -16,6 +16,8 @@ using Forum.Membership.Entities;
 using Forum.Membership.Services;
 using Forum.Membership.BusinessObjects;
 using Forum.Membership.Seeds;
+using Forum.System.Contexts;
+using Forum.System;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -26,6 +28,7 @@ builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
 {
     containerBuilder.RegisterModule(new WebModule());
+    containerBuilder.RegisterModule(new SystemModule(connectionString, migrationAssemblyName));
     containerBuilder.RegisterModule(new MembershipModule(connectionString, migrationAssemblyName));
     containerBuilder.RegisterModule(new EmailMessagingModule(connectionString,
                 migrationAssemblyName));
@@ -43,7 +46,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connectionString,
                 b => b.MigrationsAssembly(migrationAssemblyName)));
 
-builder.Services.AddDbContext<MembershipDbContext>(options =>
+builder.Services.AddDbContext<SystemDbContext>(options =>
                 options.UseSqlServer(connectionString,
                 b => b.MigrationsAssembly(migrationAssemblyName)));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();

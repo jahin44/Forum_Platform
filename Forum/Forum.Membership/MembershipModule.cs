@@ -28,16 +28,6 @@ namespace Forum.Membership
                 .WithParameter("migrationAssemblyName", _migrationAssemblyName)
                 .InstancePerLifetimeScope();
 
-            builder.RegisterType<MembershipDbContext>().AsSelf()
-                .WithParameter("connectionString", _connectionString)
-                .WithParameter("migrationAssemblyName", _migrationAssemblyName)
-                .InstancePerLifetimeScope();
-
-            builder.RegisterType<MembershipDbContext>().As<IMembershipDbContext>()
-                .WithParameter("connectionString", _connectionString)
-                .WithParameter("migrationAssemblyName", _migrationAssemblyName)
-                .InstancePerLifetimeScope();
-
             builder.RegisterType<UrlService>().As<IUrlService>().InstancePerLifetimeScope();
             builder.RegisterType<MailSenderService>().As<IMailSenderService>().InstancePerLifetimeScope();
 
