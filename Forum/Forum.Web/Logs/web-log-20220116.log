@@ -198,3 +198,5 @@ System.InvalidOperationException: Board Name Already exists.
    at Forum.System.Services.BoardService.CreateBoard(Board board, Guid modId) in D:\GitHub\Forum_Platform\Forum\Forum.System\Services\BoardService.cs:line 52
    at Forum.Web.Models.Moderator.CreateBoardModel.CreateBoard(String userEmail) in D:\GitHub\Forum_Platform\Forum\Forum.Web\Models\Moderator\CreateBoardModel.cs:line 53
    at Forum.Web.Controllers.ModeratorController.CreateBoard(CreateBoardModel model) in D:\GitHub\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 40
+2022-01-16 23:55:29.139 +06:00 [INF] Application Starting up
+2022-01-16 23:57:24.180 +06:00 [INF] Application Starting up

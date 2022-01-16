@@ -23,6 +23,7 @@ namespace Forum.Web.Models.Account
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "Confirm Password")]
+        [Compare ("Password",ErrorMessage = "password not match")]
         public string ConfirmPassword { get; set; }
         public string? ReturnUrl { get; set; }
         public IList<AuthenticationScheme>? ExternalLogins { get; set; }

@@ -6,17 +6,17 @@
     <title>@ViewData["Title"] - Forum.Web</title>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
   <!-- Nucleo Icons -->
-  <link href="../material/assets/css/nucleo-icons.css" rel="stylesheet" />
-  <link href="../material/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <link href="~/material/assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="~/material/assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <!-- CSS Files -->
-  <link id="pagestyle" href="../material/assets/css/material-dashboard.css?v=3.0.0" rel="stylesheet" />
+  <link id="pagestyle" href="~/material/assets/css/material-dashboard.css?v=3.0.0" rel="stylesheet" />
   
 </head>
-<body>
+<body style = "min-height:1000px" >
      <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark" id="sidenav-main">
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
@@ -115,15 +115,15 @@
       Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
     }
   </script>
-  <script src="../material/assets/js/core/popper.min.js"></script>
-  <script src="../material/assets/js/core/bootstrap.min.js"></script>
-  <script src="../material/assets/js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="../material/assets/js/plugins/smooth-scrollbar.min.js"></script>
-  <script src="../material/assets/js/plugins/chartjs.min.js"></script>
+  <script src="~/material/assets/js/core/popper.min.js"></script>
+  <script src="~/material/assets/js/core/bootstrap.min.js"></script>
+  <script src="~/material/assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="~/material/assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="~/material/assets/js/plugins/chartjs.min.js"></script>
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="../material/assets/js/material-dashboard.min.js?v=3.0.0"></script>
+  <script src="~/material/assets/js/material-dashboard.min.js?v=3.0.0"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
