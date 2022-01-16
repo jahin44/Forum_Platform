@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@using Forum.Membership.Entities
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -35,22 +40,17 @@
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white " href="@Url.Action("CreateBoard", "Moderator")">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">table_view</i>
-            </div>
-            <span class="nav-link-text ms-1">Create Board</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white " href="@Url.Action("Index", "Moderator")">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">receipt_long</i>
-            </div>
-            <span class="nav-link-text ms-1">All Board</span>
-          </a>
-        </li>
+      @if (SignInManager.IsSignedIn(User))
+    {
+        var claims = User.Claims.ToList();
+        foreach (var claim in claims)
+        {
+            if (claim.Type == "Moderator")
+            {
+                    <partial name="Partial/_SidebarPartial"/>
+            }
+        }
+    }
         <li class="nav-item">
           <a class="nav-link text-white " href="#">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
