@@ -161,3 +161,40 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'id can not be em
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2022-01-16 21:23:34.465 +06:00 [INF] Application Starting up
 2022-01-16 21:28:02.535 +06:00 [INF] Application Starting up
+2022-01-16 21:36:52.568 +06:00 [INF] Application Starting up
+2022-01-16 21:39:48.994 +06:00 [INF] Application Starting up
+2022-01-16 21:55:26.430 +06:00 [INF] Application Starting up
+2022-01-16 22:04:56.403 +06:00 [INF] Application Starting up
+2022-01-16 22:06:47.134 +06:00 [INF] Application Starting up
+2022-01-16 22:08:48.236 +06:00 [INF] Application Starting up
+2022-01-16 22:09:31.116 +06:00 [ERR] The view 'Index' was not found. Searched locations: ["/Views/Moderator/Index.cshtml","/Views/Shared/Index.cshtml","/Pages/Shared/Index.cshtml"]
+2022-01-16 22:09:31.132 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/Moderator/Index.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-16 22:09:38.767 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: Board Name Already exists.
+   at Forum.System.Services.BoardService.CreateBoard(Board board, Guid modId) in D:\GitHub\Forum_Platform\Forum\Forum.System\Services\BoardService.cs:line 52
+   at Forum.Web.Models.Moderator.CreateBoardModel.CreateBoard(String userEmail) in D:\GitHub\Forum_Platform\Forum\Forum.Web\Models\Moderator\CreateBoardModel.cs:line 53
+   at Forum.Web.Controllers.ModeratorController.CreateBoard(CreateBoardModel model) in D:\GitHub\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 40
