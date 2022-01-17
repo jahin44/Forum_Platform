@@ -8,7 +8,7 @@ namespace Forum.Web.Models.Moderator
     public class CreateBoardModel
     {
         [Required]
-        [StringLength(256, ErrorMessage = "Board Name cannot exceed 255 characters.")]
+        [StringLength(100, ErrorMessage = "Board Name cannot exceed 100 characters.")]
         public string BoardName { get; set; }
         private ILifetimeScope _scope;
         private IBoardService _boardService;

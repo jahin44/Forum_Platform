@@ -76,3 +76,256 @@ System.InvalidOperationException: The model item passed into the ViewDataDiction
 2022-01-17 01:03:27.828 +06:00 [INF] Application Starting up
 2022-01-17 01:03:33.528 +06:00 [INF] User logged out.
 2022-01-17 01:03:57.138 +06:00 [INF] User created a new account with password.
+2022-01-17 01:08:23.287 +06:00 [INF] Application Starting up
+2022-01-17 01:08:48.580 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.CreateBoardModel.CreateBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\CreateBoardModel.cs:line 50
+   at Forum.Web.Controllers.ModeratorController.CreateBoard(CreateBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 40
+2022-01-17 01:10:53.305 +06:00 [INF] Application Starting up
+2022-01-17 01:11:00.027 +06:00 [INF] User logged out.
+2022-01-17 01:11:20.643 +06:00 [WRN] Invalid password for user.
+2022-01-17 01:11:20.644 +06:00 [WRN] User failed to provide the correct password.
+2022-01-17 01:11:37.596 +06:00 [WRN] Invalid password for user.
+2022-01-17 01:11:37.596 +06:00 [WRN] User failed to provide the correct password.
+2022-01-17 01:12:46.948 +06:00 [INF] Application Starting up
+2022-01-17 01:13:01.787 +06:00 [WRN] Invalid password for user.
+2022-01-17 01:13:01.793 +06:00 [WRN] User failed to provide the correct password.
+2022-01-17 01:13:20.311 +06:00 [WRN] User validation failed: DuplicateUserName;DuplicateEmail.
+2022-01-17 01:13:20.482 +06:00 [WRN] User validation failed: DuplicateUserName;DuplicateEmail.
+2022-01-17 01:13:20.529 +06:00 [WRN] User validation failed: DuplicateUserName;DuplicateEmail.
+2022-01-17 01:13:51.000 +06:00 [INF] User created a new account with password.
+2022-01-17 01:19:21.072 +06:00 [INF] Application Starting up
+2022-01-17 01:20:26.504 +06:00 [INF] User logged out.
+2022-01-17 01:24:29.185 +06:00 [INF] Application Starting up
+2022-01-17 01:24:49.455 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.CreateBoardModel.CreateBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\CreateBoardModel.cs:line 50
+   at Forum.Web.Controllers.ModeratorController.CreateBoard(CreateBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 40
+2022-01-17 01:25:10.091 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.CreateBoardModel.CreateBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\CreateBoardModel.cs:line 50
+   at Forum.Web.Controllers.ModeratorController.CreateBoard(CreateBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 40
+2022-01-17 01:25:15.764 +06:00 [INF] User logged out.
+2022-01-17 01:41:50.110 +06:00 [INF] Application Starting up
+2022-01-17 01:42:22.142 +06:00 [INF] User logged out.
+2022-01-17 01:42:36.728 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.CreateBoardModel.CreateBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\CreateBoardModel.cs:line 50
+   at Forum.Web.Controllers.ModeratorController.CreateBoard(CreateBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 41
+2022-01-17 02:31:50.237 +06:00 [INF] Application Starting up
+2022-01-17 02:32:13.986 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.CreateBoardModel.CreateBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\CreateBoardModel.cs:line 50
+   at Forum.Web.Controllers.ModeratorController.CreateBoard(CreateBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 40
+2022-01-17 02:38:32.947 +06:00 [INF] Application Starting up
+2022-01-17 02:38:40.611 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'CommonPermission' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-17 02:38:53.773 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.CreateBoardModel.CreateBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\CreateBoardModel.cs:line 50
+   at Forum.Web.Controllers.ModeratorController.CreateBoard(CreateBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 40
+2022-01-17 02:38:59.166 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'CommonPermission' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-17 02:41:58.251 +06:00 [INF] Application Starting up
+2022-01-17 02:42:05.558 +06:00 [WRN] 401 Error occurred. User Access Denied 
+2022-01-17 02:42:15.086 +06:00 [WRN] 401 Error occurred. User Access Denied 
+2022-01-17 02:43:01.783 +06:00 [INF] Application Starting up
+2022-01-17 02:43:06.750 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'GenaralPermission' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-17 02:43:41.207 +06:00 [INF] Application Starting up
+2022-01-17 02:43:47.277 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'GenaralPermission' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-17 02:48:00.173 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'GenaralPermission' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-17 02:55:13.128 +06:00 [INF] Application Starting up
+2022-01-17 02:55:51.532 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'id can not be empty.')
+   at Forum.System.Services.BoardService.GetBoard(Guid id) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.System\Services\BoardService.cs:line 74
+   at Forum.Web.Models.Moderator.EditBoardModel.LoadBoard(Guid id) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\EditBoardModel.cs:line 36
+   at Forum.Web.Controllers.ModeratorController.EditBoard(Guid id) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 63
+   at lambda_method800(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-17 02:57:04.667 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'GenaralPermission' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-17 02:57:44.593 +06:00 [INF] Application Starting up
+2022-01-17 03:05:04.609 +06:00 [INF] Application Starting up
+2022-01-17 03:05:21.204 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.EditBoardModel.EditBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\EditBoardModel.cs:line 59
+   at Forum.Web.Controllers.ModeratorController.EditBoard(EditBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 75
+2022-01-17 03:05:29.429 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.DeleteBoardModel.DeleteBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\DeleteBoardModel.cs:line 60
+   at Forum.Web.Controllers.ModeratorController.DeleteBoard(DeleteBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 103
+2022-01-17 03:05:30.798 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.DeleteBoardModel.DeleteBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\DeleteBoardModel.cs:line 60
+   at Forum.Web.Controllers.ModeratorController.DeleteBoard(DeleteBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 103
+2022-01-17 03:05:31.723 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.DeleteBoardModel.DeleteBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\DeleteBoardModel.cs:line 60
+   at Forum.Web.Controllers.ModeratorController.DeleteBoard(DeleteBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 103
+2022-01-17 03:05:33.112 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.DeleteBoardModel.DeleteBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\DeleteBoardModel.cs:line 60
+   at Forum.Web.Controllers.ModeratorController.DeleteBoard(DeleteBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 103
+2022-01-17 03:06:17.660 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.DeleteBoardModel.DeleteBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\DeleteBoardModel.cs:line 60
+   at Forum.Web.Controllers.ModeratorController.DeleteBoard(DeleteBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 103
+2022-01-17 03:06:19.185 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.DeleteBoardModel.DeleteBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\DeleteBoardModel.cs:line 60
+   at Forum.Web.Controllers.ModeratorController.DeleteBoard(DeleteBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 103
+2022-01-17 03:06:25.501 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.DeleteBoardModel.DeleteBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\DeleteBoardModel.cs:line 60
+   at Forum.Web.Controllers.ModeratorController.DeleteBoard(DeleteBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 103
+2022-01-17 03:06:39.208 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'GenaralPermission' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-17 03:07:37.011 +06:00 [INF] Application Starting up
+2022-01-17 03:07:46.034 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'CommonPermission' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-17 03:08:02.502 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'CommonPermission' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-17 03:08:07.055 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'GenaralPermission' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-17 03:08:33.742 +06:00 [INF] User logged out.
+2022-01-17 03:08:54.758 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: Board Name Already exists.
+   at Forum.System.Services.BoardService.UpdateBoardName(Board board, Guid modId) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.System\Services\BoardService.cs:line 117
+   at Forum.Web.Models.Moderator.EditBoardModel.EditBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\EditBoardModel.cs:line 62
+   at Forum.Web.Controllers.ModeratorController.EditBoard(EditBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 75
+2022-01-17 03:09:44.365 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'CommonPermission' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-17 03:12:08.467 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'CommonPermission' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-17 03:16:05.595 +06:00 [INF] Application Starting up
+2022-01-17 03:17:49.090 +06:00 [INF] User logged out.
+2022-01-17 03:17:57.067 +06:00 [WRN] Invalid password for user.
+2022-01-17 03:17:57.068 +06:00 [WRN] User failed to provide the correct password.
+2022-01-17 03:19:56.772 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'GenaralPermission' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-17 03:20:04.443 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The AuthorizationPolicy named: 'GenaralPermission' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-17 03:21:11.851 +06:00 [INF] Application Starting up
+2022-01-17 03:24:01.173 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.EditBoardModel.EditBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\EditBoardModel.cs:line 59
+   at Forum.Web.Controllers.ModeratorController.EditBoard(EditBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 75
+2022-01-17 03:26:47.547 +06:00 [INF] Application Starting up
+2022-01-17 03:29:39.023 +06:00 [INF] Application Starting up
+2022-01-17 03:29:57.119 +06:00 [ERR] Topic Creation Failed
+System.InvalidOperationException: Topic Name Already exists.
+   at Forum.System.Services.TopicService.CreateTopic(Topic topic, Guid userId) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.System\Services\TopicService.cs:line 53
+   at Forum.Web.Models.Topic.CreateTopicModel.CreateTopic(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Topic\CreateTopicModel.cs:line 70
+   at Forum.Web.Controllers.TopicController.CreateTopic(CreateTopicModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\TopicController.cs:line 41
+2022-01-17 03:31:12.393 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.CreateBoardModel.CreateBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\CreateBoardModel.cs:line 50
+   at Forum.Web.Controllers.ModeratorController.CreateBoard(CreateBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 40
+2022-01-17 03:31:18.945 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.DeleteBoardModel.DeleteBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\DeleteBoardModel.cs:line 60
+   at Forum.Web.Controllers.ModeratorController.DeleteBoard(DeleteBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 103
+2022-01-17 03:31:19.887 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.DeleteBoardModel.DeleteBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\DeleteBoardModel.cs:line 60
+   at Forum.Web.Controllers.ModeratorController.DeleteBoard(DeleteBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 103
+2022-01-17 03:31:20.234 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.DeleteBoardModel.DeleteBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\DeleteBoardModel.cs:line 60
+   at Forum.Web.Controllers.ModeratorController.DeleteBoard(DeleteBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 103
+2022-01-17 03:31:22.359 +06:00 [ERR] Board Creation Failed
+System.InvalidOperationException: You are not permited to create a Board
+   at Forum.Web.Models.Moderator.DeleteBoardModel.DeleteBoard(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Moderator\DeleteBoardModel.cs:line 60
+   at Forum.Web.Controllers.ModeratorController.DeleteBoard(DeleteBoardModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\ModeratorController.cs:line 103
+2022-01-17 03:36:26.575 +06:00 [INF] Application Starting up
+2022-01-17 03:43:10.863 +06:00 [INF] Application Starting up
+2022-01-17 03:50:47.796 +06:00 [INF] Application Starting up
+2022-01-17 03:52:23.005 +06:00 [INF] Application Starting up
+2022-01-17 03:52:43.330 +06:00 [ERR] Topic Creation Failed
+System.InvalidOperationException: Topic Name Already exists.
+   at Forum.System.Services.TopicService.CreateTopic(Topic topic, Guid userId) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.System\Services\TopicService.cs:line 53
+   at Forum.Web.Models.Topic.CreateTopicModel.CreateTopic(String userEmail) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Models\Topic\CreateTopicModel.cs:line 70
+   at Forum.Web.Controllers.TopicController.CreateTopic(CreateTopicModel model) in D:\GitHub\Intern2\Forum_Platform\Forum\Forum.Web\Controllers\TopicController.cs:line 41
+2022-01-17 03:53:18.526 +06:00 [INF] User logged out.
+2022-01-17 03:56:12.627 +06:00 [INF] User logged out.
+2022-01-17 03:59:24.018 +06:00 [INF] Application Starting up
+2022-01-17 17:19:37.573 +06:00 [INF] Application Starting up
