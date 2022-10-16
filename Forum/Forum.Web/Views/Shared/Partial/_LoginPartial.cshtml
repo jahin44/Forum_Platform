@@ -1,0 +1,46 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Forum.Membership.Entities
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<header>
+      <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
+      <div class="container-fluid py-1 px-3">
+        <nav aria-label="breadcrumb">
+          <h6 class="font-weight-bolder mb-0">Dashboard</h6>
+        </nav>
+        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+          <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+            <div class="input-group input-group-outline">
+              <label class="form-label">Type here...</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <ul class="navbar-nav  justify-content-end">
+            <li class="nav-item d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
+                <i class="fa fa-user me-sm-1"></i>
+@if (SignInManager.IsSignedIn(User))
+    {
+        var claims = User.Claims.ToList();
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="/Home/User/@UserManager.GetUserId(User)">@User.Identity.Name</a>
+         </li>
+         <li class="nav-item">
+            <form class="nav-link text-dark" asp-controller="Account" asp-action="Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <button id="button" type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+            </form>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item"><a class="nav-link text-dark" asp-action="Login" asp-controller="Account" title="">Login</a></li>
+        <li class="nav-item">
+            <a asp-action="Register" asp-controller="Account" class="nav-link text-dark" title="">Sign Up</a>
+        </li>
+    }                       
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>

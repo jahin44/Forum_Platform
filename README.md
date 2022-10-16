@@ -1,5 +1,5 @@
 # Forum_Platform
-Go TO Develop branch
+
 The project is made for Onnorokom Software Limited
 
 Configuration:
